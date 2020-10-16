@@ -1,0 +1,51 @@
+body{
+    background: #c99cca;
+}
+
+.titulo{
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    text-shadow: 0.1em 0.1em 0.2em #bc1b52;
+}
+.subtitulo{
+    font-size: 1.5rem;
+    color: #8a238d;
+}
+.texto-body{
+    text-align: justify;
+    padding: 20px;
+    width: auto;
+}
+.div-sub{
+    width: 370px;
+    border: 2px #8a238d dashed;
+}
+.img-div{
+    display: block;
+    margin: auto;
+}
+
+
+.texto-der{
+    text-align: right;
+}
+.div-texto{
+    text-align: center;
+}
+
+.div-gen{
+    display: flex;
+    border: 1px solid;
+    width: auto;
+    background-color: #c4388f;
+    box-shadow: 10px 15px #79295b;
+}
+
+.nacimiento{
+    color: #4d0e27;
+}
+.div-par{
+    color: #491435;
+    font-family: 'Times New Roman', Times, serif;
+}
