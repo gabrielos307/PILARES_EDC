@@ -18,8 +18,8 @@ app.use(cors());
 //Setting
 app.set('appName', 'Boix Dog Store');
 app.set('port', 3000);
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/public/layout/'}));
-app.set('view engine', 'hbs');
+//app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'layout', layoutsDir: __dirname + '/public/layout/'}));
+//app.set('view engine', 'hbs');
 
 
 
@@ -85,10 +85,25 @@ router.put('/producto/:id', async(req, res) =>{
     }
 });
 */
-
+router.get('/', function(req, res, next){
+    
+    res.sendFile(path.join(__dirname, '/public/index.html'));
+  });
+  router.get('/lista-producto', function(req, res, next){
+    
+    res.sendFile(path.join(__dirname, '/public/lista-producto.html'));
+  });
+  router.get('/nuevo-producto', function(req, res, next){
+    
+    res.sendFile(path.join(__dirname, '/public/nuevo-producto.html'));
+  });
+  router.get('/productos', function(req, res, next){
+    
+    res.sendFile(path.join(__dirname, '/public/productos.html'));
+  });
 app.use(express.static(path.join(__dirname, 'public')));
 
-
+app.use('/', router);
 app.listen(app.get('port'), () => {
     console.log(app.get('appName'));
     console.log('Servidor en funcion', app.get('port'));
