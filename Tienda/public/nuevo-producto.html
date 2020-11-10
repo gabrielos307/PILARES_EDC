@@ -9,63 +9,63 @@
     <title>Tienda</title>
 </head>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="/index.html">Boix Dog Store</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="/productos.html">Productos</a>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="/public/index.html">Boix Dog Store</a>
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="/public/productos.html">Productos</a>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Agrega</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="/public/lista-producto.html">Elimina o actualiza</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/public/nuevo-producto.html">Crea producto</a>
+              </div>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Agrega</a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="/lista-producto.html">Elimina o actualiza</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="/nuevo-producto.html">Crea producto</a>
-                </div>
-              </li>
-              <li class="nav-item dropdown">
-                <img src="img/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01"
-                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-               
-                <div id="carrito" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <table id="lista-carrito" class="table">
-                    <thead>
-                      <tr>
-                        <th>Imagen</th>
-                        <th>Nombre</th>
-                        <th>Precio</th>
-                      </tr>
-                    </thead>
-                    <tbody></tbody>
-                  </table>
-                  <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar carrito</a>
-                  <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar pedido</a>
-                </div>
-              </li>
-          </ul>
-          <div class="dispFecha">
-            <div class="my-2 my-lg-0 horas">
-                <p id="diaSemana"></p>
-                <p id="dia"></p>
-                <p id="mes"></p>
-                <p id="year"></p>
-            </div>
-            <div class="my-2 my-lg-0 horas">
-                <p id="horas"></p>
-                <p>:</p>
-                <p id="minutos"></p>
-                <p>:</p>
-                <p id="segundos"></p>
-                <p id="ampm"></p>
-            </div>
+              <img src="img/carrito.png" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px" href="#" id="dropdown01"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+             
+              <div id="carrito" class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <table id="lista-carrito" class="table">
+                  <thead>
+                    <tr>
+                      <th>Imagen</th>
+                      <th>Nombre</th>
+                      <th>Precio</th>
+                    </tr>
+                  </thead>
+                  <tbody></tbody>
+                </table>
+                <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar carrito</a>
+                <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar pedido</a>
+              </div>
+            </li>
+        </ul>
+        <div class="dispFecha">
+          <div class="my-2 my-lg-0 horas">
+              <p id="diaSemana"></p>
+              <p id="dia"></p>
+              <p id="mes"></p>
+              <p id="year"></p>
+          </div>
+          <div class="my-2 my-lg-0 horas">
+              <p id="horas"></p>
+              <p>:</p>
+              <p id="minutos"></p>
+              <p>:</p>
+              <p id="segundos"></p>
+              <p id="ampm"></p>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 </header>
 <body>
     <div class="container mt-5">
